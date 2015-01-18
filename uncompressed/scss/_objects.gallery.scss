@@ -1,0 +1,212 @@
+// // .galleryItem{
+// //     height:20em;
+// //     width:100%;
+// //     background-color:$black;
+// //     background-size:contain;
+// //     background-repeat:no-repeat;
+// //     background-position:center;
+// // }
+
+// .galleryWrapper{
+//   margin:1em 0;
+//   // border-top:2px solid $blue;
+//   border-bottom:2px solid $blue;
+//   padding:0 0 .5em 0;
+// }
+
+// .gallery{
+//   position:relative;
+//   overflow:hidden;
+//   max-height:28em;
+//   background:black;
+
+// }
+// .galleryItem{
+//   width:100%;
+//   padding-bottom:50%;
+//   background-size:contain;
+//   background-repeat:no-repeat;
+//   background-position:center;
+//   // margin:1em 0;
+// }
+
+// .galleryItem .imageInfo{
+//   background:$black;
+//   background:rgba($black,.5);
+//   color:$white;
+//   padding:.5em;
+//   text-align:center;
+//   .galleryItemTitle{
+//     text-transform:uppercase;
+//   }
+//   .galleryItemCaption{
+//     font-style:italic;
+//     font-size:.8em;
+//   }
+//   span{display:block;}
+// }
+
+// .galleryNextPrev{
+//   @extend %buttonReset;
+//   text-align:center;
+//   position:absolute;
+//   top:50%;
+//   z-index:1000;
+//   margin:0;
+//   padding-top:.5em;
+//   height:2em;
+//   width:1.5em;
+//   margin-top:-1em;
+//   font-size:2em;
+//   line-height:1;
+//   color:$white;
+//   background:rgba($blue,.0);
+//   transition:background,opacity;
+//   transition-duration:.3s;
+//   &:hover{background:rgba($blue,1);}
+//   .icon:before{
+//     position:relative;
+//     // top:.1em;
+//     font-family:$icons;
+//   }
+//   &.next{
+//     right:0;
+//     .icon:before{content:"\e008";}
+//     border-radius:.5em 0 0 .5em;
+//   }
+//   &.prev{
+//     left:0;
+//     .icon:before{content:"\e033";}
+//     border-radius:0 .5em .5em 0;
+//   }
+//   @include bp(d2){
+//     font-size:2em;
+//   }
+// }
+// .no-touch .galleryNextPrev{opacity:0;}
+// .no-touch .gallery:hover .galleryNextPrev{opacity:1;}
+
+// .visibleGalleryControls{
+//   margin-top:.5em;
+//   position:relative;
+// }
+// .visibleGalleryNextPrev{
+//   @extend %buttsonReset;
+//   @extend %button;
+//   font-size:.8em;
+//   width:14em;
+//   cursor:pointer;
+//   @include bp(d2){
+//     width:100%;
+//     margin:.5em 0;
+//   }
+//   &:before{
+//     position:absolute;
+//     font-size:2em;
+//     top:0;
+//     font-family:$icons;
+//   }
+//   &.prev{
+//     // float:left;
+//     text-align:right;
+//     position:absolute;
+//     top:0;
+//     left:0;
+//     &:before{
+//       left:0;
+//       content:"\e033";
+//     }
+//     @include bp(d2){
+//       position:relative;
+//       float:none;
+//     }
+//   }
+//   &.next{
+//     position:absolute;
+//     top:0;
+//     right:0;
+//     text-align:left;
+//     &:before{
+//       right:0;
+//       content:"\e008";
+//     }
+//     @include bp(d2){
+//       position:relative;
+//       float:none;
+//     }
+//   }
+//   &.fullscreenToggle{
+//     float:none;
+//     margin:0 auto;
+//     background:$blue;
+//     &:hover{background:$green;}
+//   }
+// }
+
+// // Fallback
+// .gallery.fallback{
+//   @extend %imgBg;
+//   padding-bottom:50%;
+// }
+
+// // Fullscreen Toggle
+// .inImgFullscreenToggle{
+//   position:absolute;
+//   bottom:0;
+//   z-index:1000;
+//   background:rgba($black,.4);
+//   color:$white;
+//   width:100%;
+//   text-align:center;
+//   padding:.5em;
+//   cursor:pointer;
+//   font-family:$display;
+//   font-weight:300;
+//   text-transform:uppercase;
+//   transition:opacity;
+//   transition-duration:.3s;
+//   .closeHelperText{
+//     display:none;
+//   }
+//   &:after{
+//     content:"\e034";
+//     font-family:$icons;
+//   }
+//   &.fullscreen{
+//     &:after{content:"\e035";}
+//     .closeHelperText{display:block;}
+//   }
+// }
+// .no-touch .inImgFullscreenToggle{opacity:0;}
+// .no-touch .gallery:hover .inImgFullscreenToggle{opacity:1;}
+
+// // Fullscreen option
+// .gallery.fullscreen{
+//   position:fixed;
+//   z-index:999001;
+//   width:100%;
+//   height:100%;
+//   top:0;
+//   max-height:100%;
+//   //bottom:0;
+//   left:0;
+//   //right:0;
+//   //background:$red;
+//   margin-top:0;
+//   .galleryItem{
+//     padding-bottom:0;
+//     height:100%;
+//     background-size:contain;
+//   }
+// }
+
+// // Pager
+// .galleryPager{
+//   margin:0 auto;
+//   text-align:center;
+//   font-size:2em;
+//   cursor:pointer;
+//   .cycle-pager-active{
+//     color:$green;
+//   }
+// }

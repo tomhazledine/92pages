@@ -1,0 +1,77 @@
+//------------------------------------//
+
+// Default Wordpress Starter Kit
+// * Master SASS file
+// * Architecture uses ITCSS methodology
+
+//------------------------------------//
+
+// CONTENTS
+
+// 01. Settings
+// * Colour variables
+// * Fonts
+// * Breakpoints
+
+// 02. Tools
+// * Clearfix Placeholder
+
+// 03. Generic
+// * Normalize [disabled]
+// * Reset
+
+// 04.Base
+// * Box-sizing
+// * Global font size
+
+// 05.Objects
+
+// 06.Components
+
+// 07.Trumps
+// * Hiding things visually
+// * Clearfix Class
+
+//------------------------------------//
+
+// 01. SETTINGS
+@import "settings.colours";
+@import "settings.fonts";
+@import "settings.breakpoints";
+
+// 02. TOOLS
+@import "tools.placeholders";
+@import "tools.theme";
+@import "tools.mixins";
+@import "tools.layout";
+
+// 03. GENERIC
+//@import 'generic.normalize';
+@import "generic.reset";
+
+// 04. BASE
+@import "base.general";
+@import "base.theme";
+@import "base.wordpress";
+
+// 05. ATOMS
+@import "atoms.googleMap";
+@import "atoms.menus";
+@import "atoms.socialLinks";
+@import "atoms.address";
+@import "atoms.contactInfo";
+@import "atoms.copyright";
+@import "atoms.featuredImage";
+
+// 06. OBJECTS
+@import "objects.gallery";
+@import "objects.table";
+
+// 07. COMPONENTS
+@import "components.header";
+@import "components.footer";
+@import "components.page";
+
+// 08. TRUMPS
+@import "trumps.utilities";
+@import "trumps.testing";

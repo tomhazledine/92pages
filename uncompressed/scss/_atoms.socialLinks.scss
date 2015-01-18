@@ -1,0 +1,20 @@
+.socialLinks{
+  p{padding:0 0 .5em 0;}
+  .socialLink{
+    float:left;
+    padding-right:.5em;
+    a{
+      font-size:1.5em;
+      text-decoration:none;
+      &:hover{color:$white;}
+    }
+    a:before{
+      font-family:$icons;
+      content:"\e001";
+      font-size:2em;
+    }
+    a.twitter:before{content:"\e02b";}
+    a.facebook:before{content:"\e029";}
+    a.instagram:before{content:"\e030";}
+  }
+}

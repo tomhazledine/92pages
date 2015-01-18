@@ -1,0 +1,16 @@
+img{
+  //width:auto;
+  max-width:100%;
+  //height:auto;
+}
+.wp-caption{max-width:100%;}
+img.alignright,.wp-caption.alignright {width:auto;float:right; margin:0 0 1em 1em}
+img.alignleft,.wp-caption.alignleft {width:auto;float:left; margin:0 1em 1em 0}
+img.aligncenter,.wp-caption.aligncenter {width:auto;display: block; margin-left: auto; margin-right: auto}
+.alignright {float:right; }
+.alignleft {float:left; }
+.aligncenter {display: block; margin-left: auto; margin-right: auto}
+.wp-caption-text{
+  padding:.5em 0;
+  font-style:italic;
+}

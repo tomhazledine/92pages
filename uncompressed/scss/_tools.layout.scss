@@ -1,0 +1,13 @@
+%mainWrap{
+    width:96%;
+    max-width:24em;
+    margin:0 auto;
+}
+
+%halfWidth{
+    width:48%;
+    float:left;
+    &.right{
+        float:right;
+    }
+}

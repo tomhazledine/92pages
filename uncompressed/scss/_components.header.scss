@@ -1,0 +1,64 @@
+// .globalHeader{
+//     padding-bottom:1em;
+//     // border-bottom:1px solid $blue;
+//     margin-bottom:1em;
+//     background:$blueLight;
+//     // color:$white;
+//     a{
+//         // color:$blueLight;
+//     }
+// }
+
+// .headerInner{
+//     @extend %mainWrap;
+
+// }
+
+// .siteTitle{
+//     padding:2em 0;
+//     text-align:center;
+//     a{
+//         text-decoration:none;
+//         color:inherit;
+//     }
+//     .siteLogo{
+//         width:4em;
+//         height:3em;
+//         // background:$red;
+//         margin:0 auto;
+//         background-image:url('../images/pawIcon.png');
+//         background-image:url('../images/pawIcon.svg');
+//         background-size:contain;
+//         background-repeat:no-repeat;
+//         background-position:center;
+//     }
+//     h3{
+//         font-size:2em;
+//         text-transform:uppercase;
+//         letter-spacing:.2em;
+//         color:$white;
+//         position:relative;
+//         margin-bottom:.1em;
+//         &:after{
+//             position:absolute;
+//             top:100%;
+//             left:50%;
+//             height:2px;
+//             background:$white;
+//             width:11.8em;
+//             margin-left:-5.95em;
+//             content:"";
+//         }
+//     }
+//     .tagline{
+//         text-transform:uppercase;
+//         letter-spacing:.31em;
+//         color:$white;
+//     }
+// }
+
+// .headerInner .penMenu{
+//     li{
+//         text-transform:uppercase;
+//     }
+// }
