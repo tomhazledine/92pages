@@ -91,64 +91,6 @@ p {
   color: #39cccc;
   font-style: italic; }
 
-img {
-  max-width: 100%; }
-
-.wp-caption {
-  max-width: 100%; }
-
-img.alignright, .wp-caption.alignright {
-  width: auto;
-  float: right;
-  margin: 0 0 1em 1em; }
-
-img.alignleft, .wp-caption.alignleft {
-  width: auto;
-  float: left;
-  margin: 0 1em 1em 0; }
-
-img.aligncenter, .wp-caption.aligncenter {
-  width: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.alignright {
-  float: right; }
-
-.alignleft {
-  float: left; }
-
-.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.wp-caption-text {
-  padding: 0.5em 0;
-  font-style: italic; }
-
-.socialLinks p {
-  padding: 0 0 0.5em 0; }
-.socialLinks .socialLink {
-  float: left;
-  padding-right: 0.5em; }
-  .socialLinks .socialLink a {
-    font-size: 1.5em;
-    text-decoration: none; }
-    .socialLinks .socialLink a:hover {
-      color: #fff; }
-  .socialLinks .socialLink a:before {
-    font-family: 'iconFont';
-    content: "\e001";
-    font-size: 2em; }
-  .socialLinks .socialLink a.twitter:before {
-    content: "\e02b"; }
-  .socialLinks .socialLink a.facebook:before {
-    content: "\e029"; }
-  .socialLinks .socialLink a.instagram:before {
-    content: "\e030"; }
-
 .tableBlock {
   margin: 1em 0 4em 0; }
 
