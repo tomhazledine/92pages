@@ -5,22 +5,41 @@ body{
 }
 
 h1{
-  font-size:1.6em;
+  display:inline-block;
+  font-size:2em;
   padding-bottom:1rem;
   font-family:$display;
   border-bottom:2px solid $highlight;
   margin-bottom:1rem;
+  // margin-right:1rem;
+  
+  transition:right;
+  transition-duration:1s;
+
+  position:absolute;
+  right:105%;
+  @include bp(d1){
+    position:relative;
+    right:0;
+  }
   // text-transform:uppercase;
 }
 h2{
-  font-size:1.2em;
-  padding-bottom:1rem;
+  display:inline-block;
+  font-size:1.4em;
+  padding-bottom:.5rem;
+  border-bottom:2px solid $highlight;
+  margin-bottom:.5rem;
   font-family:$display;
 }
 h3{
-  color:$highlight;
+  font-size:1em;
+  // color:$highlight;
   font-family:$display;
   padding-bottom:1rem;
+}
+h4{
+  font-family:$display;
 }
 
 p{
@@ -28,7 +47,39 @@ p{
   font-family:$text;
 }
 
+a{
+  color:$black;
+  text-decoration:none;
+  background:rgba($highlight,.5);
+  transition:background,color;
+  transition-duration:.2s;
+  &:hover{
+    background:rgba($highlight,1);
+    // color:$white;
+  }
+}
+
+li{
+  list-style:none;
+  padding-bottom:.5em;
+}
+
 .name92{
   color:$highlight;
   font-style:italic;
+}
+
+.backToTop{
+  font-family:$display;
+  // font-style:italic;
+  text-transform:uppercase;
+  font-size:.6em;
+  display:block;
+  padding-bottom:.5rem;
+  background:none;
+  color:darken($cream,20%);
+  &:hover{
+    background:none;
+    color:$highlight;
+  }
 }
