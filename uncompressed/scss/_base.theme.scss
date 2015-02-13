@@ -1,7 +1,9 @@
+html{height:100%;}
 body{
   background:$cream;
   color:$black;
   font-size:1.4em;
+  height:100%;
 }
 
 h1{
@@ -50,7 +52,7 @@ p{
 a{
   color:$black;
   text-decoration:none;
-  background:rgba($highlight,.5);
+  background:rgba($highlight,.3);
   transition:background,color;
   transition-duration:.2s;
   &:hover{
@@ -59,14 +61,48 @@ a{
   }
 }
 
+ul{
+  display:block;
+  padding-bottom:2em;
+}
+
 li{
   list-style:none;
-  padding-bottom:.5em;
+  margin:1em 0;
+  padding-left:1em;
+  border-left:2px solid $highlight;
+  // font-style:italic;
+  p{
+    font-style:italic;
+    padding:.5em 0 0 0;
+  }
+}
+
+blockquote{
+  color:$highlight;
+  margin-left:-15%;
+  width:130%;
+  padding:2em 0;
+  font-size:1.2em;
+  @include bp(d1){
+    width:100%;
+    margin-left:0;
+  }
+}
+
+blockquote,blockquote p{
+  font-family:$display;
+}
+
+section{
+  margin-bottom:6em;
+  min-height:100%;
+  @include bp(d1){margin-bottom:2em;}
 }
 
 .name92{
   color:$highlight;
-  font-style:italic;
+  // font-style:italic;
 }
 
 .backToTop{
