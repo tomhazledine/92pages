@@ -21,14 +21,14 @@ a::selection {
   font-weight: normal;
   font-style: normal; }
 
-.clearfix:before, .clearfix:after {
+.tr:before, .clearfix:before, .tr:after, .clearfix:after {
   content: ' ';
   display: table; }
 
-.clearfix:after {
+.tr:after, .clearfix:after {
   clear: both; }
 
-.clearfix {
+.tr, .clearfix {
   zoom: 1; }
 
 .wrapper {
@@ -168,6 +168,23 @@ section {
   .backToTop:hover {
     background: none;
     color: #39cccc; }
+
+.tr {
+  font-family: "P22 Underground W01", sans-serif;
+  border-bottom: 1px solid rgba(57, 204, 204, 0.2); }
+  .tr:last-of-type {
+    border-bottom: 0; }
+  .tr div {
+    padding: 0.5em;
+    width: 50%;
+    float: left; }
+    .tr div:first-of-type {
+      text-align: right; }
+    .tr div:nth-of-type(2n) {
+      color: #39cccc; }
+
+.contactLink {
+  font-family: "P22 Underground W01", sans-serif; }
 
 .wrapper {
   padding: 2em 0; }
