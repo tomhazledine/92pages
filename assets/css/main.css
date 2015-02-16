@@ -223,5 +223,20 @@ section {
   a {
     color: #000;
     background: none; }
-  .pageLinks {
-    display: none; } }
+  p {
+    orphans: 3;
+    widows: 3; }
+  h1 {
+    position: relative !important;
+    right: 0 !important;
+    margin-bottom: 2em;
+    -webkit-transition: none;
+            transition: none;
+    -webkit-transition-duration: 0;
+            transition-duration: 0; }
+  .pageLinksWrapper {
+    display: none; }
+  .name92 {
+    color: #000; }
+  .newPrintPage {
+    page-break-before: left; } }

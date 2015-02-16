@@ -13,7 +13,26 @@
         background:none;
     }
 
-    .pageLinks{
+    p{
+        orphans:3;
+        widows:3;
+    }
+
+    h1{
+        position:relative !important;
+        right:0 !important;
+        margin-bottom:2em;
+        transition:none;
+        transition-duration:0;
+    }
+
+    .pageLinksWrapper{
         display:none;
+    }
+
+    .name92{color:#000;}
+
+    .newPrintPage{
+        page-break-before:left;
     }
 }
