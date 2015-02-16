@@ -214,3 +214,14 @@ section {
 .invisible {
   visibility: hidden; }
 
+@media print {
+  body {
+    background: none;
+    color: #000; }
+  .backToTop {
+    display: none; }
+  a {
+    color: #000;
+    background: none; }
+  .pageLinks {
+    display: none; } }
